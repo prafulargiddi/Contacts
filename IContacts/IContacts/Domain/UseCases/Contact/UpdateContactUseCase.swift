@@ -7,12 +7,12 @@
 
 import Foundation
 class UpdateContactUseCase: UpdateContactUseCaseProtocol {
-    private let contactRepo: UpdateContactUseCaseProtocol
-    init(contactRepo: UpdateContactUseCaseProtocol) {
+    private let contactRepo: ContactRepositoryProtocol
+    init(contactRepo: ContactRepositoryProtocol) {
         self.contactRepo = contactRepo
     }
     func execute(id: UUID, data: ContactRequestModel) async -> Result<Bool, ContactError> {
-        return await self.contactRepo.execute(id: id, data: data)
+        return await self.contactRepo.updateContact(id: id, data: data)
     }
     
     

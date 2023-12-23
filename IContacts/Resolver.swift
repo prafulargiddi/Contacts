@@ -6,6 +6,11 @@
 //
 
 import Foundation
-//import Swinject
+import Swinject
 
+class Resolver {
+    static let shared = Resolver()
+    
+    private var container = bu
+}
 

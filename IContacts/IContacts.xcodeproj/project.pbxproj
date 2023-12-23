@@ -36,6 +36,8 @@
 		7A6061132B37126C00BC3CED /* UpdateContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F62B37126B00BC3CED /* UpdateContactUseCase.swift */; };
 		7A6061142B37126C00BC3CED /* DeleteContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F72B37126B00BC3CED /* DeleteContactUseCase.swift */; };
 		7A6061152B37126C00BC3CED /* CreateContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F82B37126B00BC3CED /* CreateContactUseCase.swift */; };
+		7A6061182B37153700BC3CED /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6061172B37153700BC3CED /* Swinject */; };
+		7A60611A2B3715D300BC3CED /* IocContactainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061192B3715D300BC3CED /* IocContactainer.swift */; };
 		7A6D16EF2B33588500261438 /* IContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16EE2B33588500261438 /* IContactsApp.swift */; };
 		7A6D16F12B33588500261438 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16F02B33588500261438 /* ContentView.swift */; };
 		7A6D16F32B33588700261438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D16F22B33588700261438 /* Assets.xcassets */; };
@@ -93,6 +95,7 @@
 		7A6060F62B37126B00BC3CED /* UpdateContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateContactUseCase.swift; sourceTree = "<group>"; };
 		7A6060F72B37126B00BC3CED /* DeleteContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteContactUseCase.swift; sourceTree = "<group>"; };
 		7A6060F82B37126B00BC3CED /* CreateContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContactUseCase.swift; sourceTree = "<group>"; };
+		7A6061192B3715D300BC3CED /* IocContactainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IocContactainer.swift; sourceTree = "<group>"; };
 		7A6D16EB2B33588500261438 /* IContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D16EE2B33588500261438 /* IContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IContactsApp.swift; sourceTree = "<group>"; };
 		7A6D16F02B33588500261438 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6061182B37153700BC3CED /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +138,8 @@
 		7A6060C22B37126B00BC3CED /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				7A6061192B3715D300BC3CED /* IocContactainer.swift */,
+				7A6060D92B37126B00BC3CED /* Resolver.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -239,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				7A6060D82B37126B00BC3CED /* ContactListView.swift */,
-				7A6060D92B37126B00BC3CED /* Resolver.swift */,
 				7A6060DA2B37126B00BC3CED /* ContactListViewModel.swift */,
 			);
 			path = List;
@@ -433,6 +438,9 @@
 			dependencies = (
 			);
 			name = IContacts;
+			packageProductDependencies = (
+				7A6061172B37153700BC3CED /* Swinject */,
+			);
 			productName = IContacts;
 			productReference = 7A6D16EB2B33588500261438 /* IContacts.app */;
 			productType = "com.apple.product-type.application";
@@ -505,6 +513,9 @@
 				Base,
 			);
 			mainGroup = 7A6D16E22B33588500261438;
+			packageReferences = (
+				7A6061162B37153700BC3CED /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 7A6D16EC2B33588500261438 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -578,6 +589,7 @@
 				7A6D16EF2B33588500261438 /* IContactsApp.swift in Sources */,
 				7A6061142B37126C00BC3CED /* DeleteContactUseCase.swift in Sources */,
 				7A6061042B37126B00BC3CED /* TextInput.swift in Sources */,
+				7A60611A2B3715D300BC3CED /* IocContactainer.swift in Sources */,
 				7A6061072B37126B00BC3CED /* AddButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -902,6 +914,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A6061162B37153700BC3CED /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A6061172B37153700BC3CED /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A6061162B37153700BC3CED /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7A6060C92B37126B00BC3CED /* IContacts.xcdatamodeld */ = {
