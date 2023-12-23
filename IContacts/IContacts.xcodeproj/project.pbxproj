@@ -7,12 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A6060F92B37126B00BC3CED /* CoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060C72B37126B00BC3CED /* CoreDataWrapper.swift */; };
+		7A6060FA2B37126B00BC3CED /* IContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060C92B37126B00BC3CED /* IContacts.xcdatamodeld */; };
+		7A6060FB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060CB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift */; };
+		7A6060FC2B37126B00BC3CED /* CoreDataContactDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060CC2B37126B00BC3CED /* CoreDataContactDataSource.swift */; };
+		7A6060FD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060CD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift */; };
+		7A6060FE2B37126B00BC3CED /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060CF2B37126B00BC3CED /* CoreDataError.swift */; };
+		7A6060FF2B37126B00BC3CED /* CoreDataWrapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060D22B37126B00BC3CED /* CoreDataWrapperProtocol.swift */; };
+		7A6061002B37126B00BC3CED /* ContactDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060D32B37126B00BC3CED /* ContactDataSourceProtocol.swift */; };
+		7A6061012B37126B00BC3CED /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060D82B37126B00BC3CED /* ContactListView.swift */; };
+		7A6061022B37126B00BC3CED /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060D92B37126B00BC3CED /* Resolver.swift */; };
+		7A6061032B37126B00BC3CED /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DA2B37126B00BC3CED /* ContactListViewModel.swift */; };
+		7A6061042B37126B00BC3CED /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DD2B37126B00BC3CED /* TextInput.swift */; };
+		7A6061052B37126B00BC3CED /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DE2B37126B00BC3CED /* SaveButton.swift */; };
+		7A6061062B37126B00BC3CED /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DF2B37126B00BC3CED /* BackButtonView.swift */; };
+		7A6061072B37126B00BC3CED /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060E02B37126B00BC3CED /* AddButton.swift */; };
+		7A6061082B37126B00BC3CED /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060E32B37126B00BC3CED /* ContactRepository.swift */; };
+		7A6061092B37126B00BC3CED /* ContactResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060E52B37126B00BC3CED /* ContactResponseModel.swift */; };
+		7A60610A2B37126B00BC3CED /* ContactError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060E72B37126B00BC3CED /* ContactError.swift */; };
+		7A60610B2B37126B00BC3CED /* ContactRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060EA2B37126B00BC3CED /* ContactRepositoryProtocol.swift */; };
+		7A60610C2B37126B00BC3CED /* GetAllContactUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060ED2B37126B00BC3CED /* GetAllContactUseCaseProtocol.swift */; };
+		7A60610D2B37126B00BC3CED /* DeleteContactUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060EE2B37126B00BC3CED /* DeleteContactUseCaseProtocol.swift */; };
+		7A60610E2B37126C00BC3CED /* UpdateContactUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060EF2B37126B00BC3CED /* UpdateContactUseCaseProtocol.swift */; };
+		7A60610F2B37126C00BC3CED /* CreateContactUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F02B37126B00BC3CED /* CreateContactUseCaseProtocol.swift */; };
+		7A6061102B37126C00BC3CED /* GetContactUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F12B37126B00BC3CED /* GetContactUseCaseProtocol.swift */; };
+		7A6061112B37126C00BC3CED /* GetAllContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F42B37126B00BC3CED /* GetAllContactUseCase.swift */; };
+		7A6061122B37126C00BC3CED /* GetContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F52B37126B00BC3CED /* GetContactUseCase.swift */; };
+		7A6061132B37126C00BC3CED /* UpdateContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F62B37126B00BC3CED /* UpdateContactUseCase.swift */; };
+		7A6061142B37126C00BC3CED /* DeleteContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F72B37126B00BC3CED /* DeleteContactUseCase.swift */; };
+		7A6061152B37126C00BC3CED /* CreateContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F82B37126B00BC3CED /* CreateContactUseCase.swift */; };
 		7A6D16EF2B33588500261438 /* IContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16EE2B33588500261438 /* IContactsApp.swift */; };
 		7A6D16F12B33588500261438 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16F02B33588500261438 /* ContentView.swift */; };
 		7A6D16F32B33588700261438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D16F22B33588700261438 /* Assets.xcassets */; };
 		7A6D16F62B33588700261438 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D16F52B33588700261438 /* Preview Assets.xcassets */; };
 		7A6D16F82B33588700261438 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16F72B33588700261438 /* Persistence.swift */; };
-		7A6D16FB2B33588700261438 /* IContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16F92B33588700261438 /* IContacts.xcdatamodeld */; };
 		7A6D17052B33588700261438 /* IContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D17042B33588700261438 /* IContactsTests.swift */; };
 		7A6D170F2B33588800261438 /* IContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D170E2B33588800261438 /* IContactsUITests.swift */; };
 		7A6D17112B33588800261438 /* IContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D17102B33588800261438 /* IContactsUITestsLaunchTests.swift */; };
@@ -36,13 +64,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A6060C72B37126B00BC3CED /* CoreDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataWrapper.swift; sourceTree = "<group>"; };
+		7A6060CA2B37126B00BC3CED /* IContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IContacts.xcdatamodel; sourceTree = "<group>"; };
+		7A6060CB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7A6060CC2B37126B00BC3CED /* CoreDataContactDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContactDataSource.swift; sourceTree = "<group>"; };
+		7A6060CD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A6060CF2B37126B00BC3CED /* CoreDataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+		7A6060D22B37126B00BC3CED /* CoreDataWrapperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataWrapperProtocol.swift; sourceTree = "<group>"; };
+		7A6060D32B37126B00BC3CED /* ContactDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDataSourceProtocol.swift; sourceTree = "<group>"; };
+		7A6060D82B37126B00BC3CED /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		7A6060D92B37126B00BC3CED /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		7A6060DA2B37126B00BC3CED /* ContactListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
+		7A6060DD2B37126B00BC3CED /* TextInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		7A6060DE2B37126B00BC3CED /* SaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		7A6060DF2B37126B00BC3CED /* BackButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
+		7A6060E02B37126B00BC3CED /* AddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		7A6060E32B37126B00BC3CED /* ContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
+		7A6060E52B37126B00BC3CED /* ContactResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactResponseModel.swift; sourceTree = "<group>"; };
+		7A6060E72B37126B00BC3CED /* ContactError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactError.swift; sourceTree = "<group>"; };
+		7A6060EA2B37126B00BC3CED /* ContactRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepositoryProtocol.swift; sourceTree = "<group>"; };
+		7A6060ED2B37126B00BC3CED /* GetAllContactUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllContactUseCaseProtocol.swift; sourceTree = "<group>"; };
+		7A6060EE2B37126B00BC3CED /* DeleteContactUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteContactUseCaseProtocol.swift; sourceTree = "<group>"; };
+		7A6060EF2B37126B00BC3CED /* UpdateContactUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateContactUseCaseProtocol.swift; sourceTree = "<group>"; };
+		7A6060F02B37126B00BC3CED /* CreateContactUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContactUseCaseProtocol.swift; sourceTree = "<group>"; };
+		7A6060F12B37126B00BC3CED /* GetContactUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetContactUseCaseProtocol.swift; sourceTree = "<group>"; };
+		7A6060F42B37126B00BC3CED /* GetAllContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllContactUseCase.swift; sourceTree = "<group>"; };
+		7A6060F52B37126B00BC3CED /* GetContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetContactUseCase.swift; sourceTree = "<group>"; };
+		7A6060F62B37126B00BC3CED /* UpdateContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateContactUseCase.swift; sourceTree = "<group>"; };
+		7A6060F72B37126B00BC3CED /* DeleteContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteContactUseCase.swift; sourceTree = "<group>"; };
+		7A6060F82B37126B00BC3CED /* CreateContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContactUseCase.swift; sourceTree = "<group>"; };
 		7A6D16EB2B33588500261438 /* IContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D16EE2B33588500261438 /* IContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IContactsApp.swift; sourceTree = "<group>"; };
 		7A6D16F02B33588500261438 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A6D16F22B33588700261438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A6D16F52B33588700261438 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A6D16F72B33588700261438 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7A6D16FA2B33588700261438 /* IContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IContacts.xcdatamodel; sourceTree = "<group>"; };
 		7A6D17002B33588700261438 /* IContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D17042B33588700261438 /* IContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IContactsTests.swift; sourceTree = "<group>"; };
 		7A6D170A2B33588800261438 /* IContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +131,231 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A6060C22B37126B00BC3CED /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		7A6060C32B37126B00BC3CED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060C42B37126B00BC3CED /* DataSources */,
+				7A6060CE2B37126B00BC3CED /* Errors */,
+				7A6060D02B37126B00BC3CED /* Protocols */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7A6060C42B37126B00BC3CED /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060C52B37126B00BC3CED /* CoreData */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		7A6060C52B37126B00BC3CED /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060C62B37126B00BC3CED /* Wrappers */,
+				7A6060C82B37126B00BC3CED /* Entities */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7A6060C62B37126B00BC3CED /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060C72B37126B00BC3CED /* CoreDataWrapper.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		7A6060C82B37126B00BC3CED /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060C92B37126B00BC3CED /* IContacts.xcdatamodeld */,
+				7A6060CB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift */,
+				7A6060CC2B37126B00BC3CED /* CoreDataContactDataSource.swift */,
+				7A6060CD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7A6060CE2B37126B00BC3CED /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060CF2B37126B00BC3CED /* CoreDataError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		7A6060D02B37126B00BC3CED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060D12B37126B00BC3CED /* Wrappers */,
+				7A6060D32B37126B00BC3CED /* ContactDataSourceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7A6060D12B37126B00BC3CED /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060D22B37126B00BC3CED /* CoreDataWrapperProtocol.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		7A6060D42B37126B00BC3CED /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060D52B37126B00BC3CED /* Contact */,
+				7A6060DC2B37126B00BC3CED /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7A6060D52B37126B00BC3CED /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060D62B37126B00BC3CED /* Edit */,
+				7A6060D72B37126B00BC3CED /* List */,
+				7A6060DB2B37126B00BC3CED /* Create */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		7A6060D62B37126B00BC3CED /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		7A6060D72B37126B00BC3CED /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060D82B37126B00BC3CED /* ContactListView.swift */,
+				7A6060D92B37126B00BC3CED /* Resolver.swift */,
+				7A6060DA2B37126B00BC3CED /* ContactListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		7A6060DB2B37126B00BC3CED /* Create */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		7A6060DC2B37126B00BC3CED /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060DD2B37126B00BC3CED /* TextInput.swift */,
+				7A6060DE2B37126B00BC3CED /* SaveButton.swift */,
+				7A6060DF2B37126B00BC3CED /* BackButtonView.swift */,
+				7A6060E02B37126B00BC3CED /* AddButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7A6060E12B37126B00BC3CED /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060E22B37126B00BC3CED /* Repositories */,
+				7A6060E42B37126B00BC3CED /* Models */,
+				7A6060E62B37126B00BC3CED /* Errors */,
+				7A6060E82B37126B00BC3CED /* Protocols */,
+				7A6060F22B37126B00BC3CED /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7A6060E22B37126B00BC3CED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060E32B37126B00BC3CED /* ContactRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7A6060E42B37126B00BC3CED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060E52B37126B00BC3CED /* ContactResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A6060E62B37126B00BC3CED /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060E72B37126B00BC3CED /* ContactError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		7A6060E82B37126B00BC3CED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060E92B37126B00BC3CED /* Repositories */,
+				7A6060EB2B37126B00BC3CED /* UseCases */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7A6060E92B37126B00BC3CED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060EA2B37126B00BC3CED /* ContactRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7A6060EB2B37126B00BC3CED /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060EC2B37126B00BC3CED /* Contact */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7A6060EC2B37126B00BC3CED /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060ED2B37126B00BC3CED /* GetAllContactUseCaseProtocol.swift */,
+				7A6060EE2B37126B00BC3CED /* DeleteContactUseCaseProtocol.swift */,
+				7A6060EF2B37126B00BC3CED /* UpdateContactUseCaseProtocol.swift */,
+				7A6060F02B37126B00BC3CED /* CreateContactUseCaseProtocol.swift */,
+				7A6060F12B37126B00BC3CED /* GetContactUseCaseProtocol.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		7A6060F22B37126B00BC3CED /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060F32B37126B00BC3CED /* Contact */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7A6060F32B37126B00BC3CED /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				7A6060F42B37126B00BC3CED /* GetAllContactUseCase.swift */,
+				7A6060F52B37126B00BC3CED /* GetContactUseCase.swift */,
+				7A6060F62B37126B00BC3CED /* UpdateContactUseCase.swift */,
+				7A6060F72B37126B00BC3CED /* DeleteContactUseCase.swift */,
+				7A6060F82B37126B00BC3CED /* CreateContactUseCase.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
 		7A6D16E22B33588500261438 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +379,14 @@
 		7A6D16ED2B33588500261438 /* IContacts */ = {
 			isa = PBXGroup;
 			children = (
+				7A6060C32B37126B00BC3CED /* Data */,
+				7A6060C22B37126B00BC3CED /* DI */,
+				7A6060E12B37126B00BC3CED /* Domain */,
+				7A6060D42B37126B00BC3CED /* Presentation */,
 				7A6D16EE2B33588500261438 /* IContactsApp.swift */,
 				7A6D16F02B33588500261438 /* ContentView.swift */,
 				7A6D16F22B33588700261438 /* Assets.xcassets */,
 				7A6D16F72B33588700261438 /* Persistence.swift */,
-				7A6D16F92B33588700261438 /* IContacts.xcdatamodeld */,
 				7A6D16F42B33588700261438 /* Preview Content */,
 			);
 			path = IContacts;
@@ -263,10 +547,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6061032B37126B00BC3CED /* ContactListViewModel.swift in Sources */,
+				7A6061102B37126C00BC3CED /* GetContactUseCaseProtocol.swift in Sources */,
+				7A60610A2B37126B00BC3CED /* ContactError.swift in Sources */,
+				7A60610F2B37126C00BC3CED /* CreateContactUseCaseProtocol.swift in Sources */,
+				7A6060FB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift in Sources */,
+				7A6061122B37126C00BC3CED /* GetContactUseCase.swift in Sources */,
+				7A6061152B37126C00BC3CED /* CreateContactUseCase.swift in Sources */,
+				7A6061012B37126B00BC3CED /* ContactListView.swift in Sources */,
+				7A6060FA2B37126B00BC3CED /* IContacts.xcdatamodeld in Sources */,
+				7A60610D2B37126B00BC3CED /* DeleteContactUseCaseProtocol.swift in Sources */,
+				7A6061092B37126B00BC3CED /* ContactResponseModel.swift in Sources */,
+				7A6060FD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift in Sources */,
+				7A6061002B37126B00BC3CED /* ContactDataSourceProtocol.swift in Sources */,
+				7A6061022B37126B00BC3CED /* Resolver.swift in Sources */,
+				7A60610C2B37126B00BC3CED /* GetAllContactUseCaseProtocol.swift in Sources */,
 				7A6D16F82B33588700261438 /* Persistence.swift in Sources */,
 				7A6D16F12B33588500261438 /* ContentView.swift in Sources */,
-				7A6D16FB2B33588700261438 /* IContacts.xcdatamodeld in Sources */,
+				7A6061132B37126C00BC3CED /* UpdateContactUseCase.swift in Sources */,
+				7A6060FC2B37126B00BC3CED /* CoreDataContactDataSource.swift in Sources */,
+				7A6061062B37126B00BC3CED /* BackButtonView.swift in Sources */,
+				7A6061052B37126B00BC3CED /* SaveButton.swift in Sources */,
+				7A6061112B37126C00BC3CED /* GetAllContactUseCase.swift in Sources */,
+				7A6060FF2B37126B00BC3CED /* CoreDataWrapperProtocol.swift in Sources */,
+				7A60610B2B37126B00BC3CED /* ContactRepositoryProtocol.swift in Sources */,
+				7A60610E2B37126C00BC3CED /* UpdateContactUseCaseProtocol.swift in Sources */,
+				7A6061082B37126B00BC3CED /* ContactRepository.swift in Sources */,
+				7A6060FE2B37126B00BC3CED /* CoreDataError.swift in Sources */,
+				7A6060F92B37126B00BC3CED /* CoreDataWrapper.swift in Sources */,
 				7A6D16EF2B33588500261438 /* IContactsApp.swift in Sources */,
+				7A6061142B37126C00BC3CED /* DeleteContactUseCase.swift in Sources */,
+				7A6061042B37126B00BC3CED /* TextInput.swift in Sources */,
+				7A6061072B37126B00BC3CED /* AddButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,12 +904,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7A6D16F92B33588700261438 /* IContacts.xcdatamodeld */ = {
+		7A6060C92B37126B00BC3CED /* IContacts.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7A6D16FA2B33588700261438 /* IContacts.xcdatamodel */,
+				7A6060CA2B37126B00BC3CED /* IContacts.xcdatamodel */,
 			);
-			currentVersion = 7A6D16FA2B33588700261438 /* IContacts.xcdatamodel */;
+			currentVersion = 7A6060CA2B37126B00BC3CED /* IContacts.xcdatamodel */;
 			path = IContacts.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
