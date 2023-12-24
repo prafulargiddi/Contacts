@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContactListView: View {
-    @StateObject var viewModel = ContactListViewModel(getAllContacts: Resolver.shared.resolve(GetAllContactUseCaseProtocol.self), deleteContact: Resolver.shared.resolve(DeleteContactUseCaseProtocol.self))
+    @StateObject var viewModel = ContactListViewModel()
     fileprivate func onLoad() {
         Task{
             await viewModel.getContacts()

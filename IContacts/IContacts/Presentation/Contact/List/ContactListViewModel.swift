@@ -8,17 +8,17 @@
 import Foundation
 
 class ContactListViewModel: ObservableObject {
-    private let getAllContacts: GetAllContactUseCaseProtocol
-    private let deleteContact: DeleteContactUseCaseProtocol
-    init(getAllContacts: GetAllContactUseCaseProtocol,
-deleteContact: DeleteContactUseCaseProtocol)
-    {
-        self.getAllContacts = getAllContacts
-        self.deleteContact = deleteContact
-    }
+    
     @Published var errorMessage = ""
     @Published var contacts: [ContactResponseModel] = []
+    private let getAllContacts: GetAllContactUseCaseProtocol
+    private let deleteContact: DeleteContactUseCaseProtocol
     
+    init()
+    {
+        self.getAllContacts = Resolver.shared.resolve(GetAllContactUseCaseProtocol.self)
+        self.deleteContact = Resolver.shared.resolve(DeleteContactUseCaseProtocol.self)
+    }
     func deleteContact(_ id: UUID) async {
         let result = await self.deleteContact.execute(id)
         switch result {

@@ -18,6 +18,12 @@ class CoreDataWrapper: CoreDataWrapperProtocol {
             }
         }
         container.viewContext.automaticallyMergesChangesFromParent = true
+        /*add necessary support for migration*/
+           let description = NSPersistentStoreDescription()
+           description.shouldMigrateStoreAutomatically = true
+           description.shouldInferMappingModelAutomatically = true
+           container.persistentStoreDescriptions =  [description]
+           /*add necessary support for migration*/
     }
     func getData(entityName: String) throws -> [NSManagedObject] {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)

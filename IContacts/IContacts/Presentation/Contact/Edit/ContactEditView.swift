@@ -11,10 +11,7 @@ struct ContactEditView: View {
     @Environment(\.presentationMode) var presentationMode
     
     
-    @StateObject var viewModel = ContactEditViewModel(
-        updateContact: Resolver.shared.resolve(UpdateContactUseCaseProtocol.self),
-        getContact: Resolver.shared.resolve(GetContactUseCaseProtocol.self)
-    )
+    @StateObject var viewModel = ContactEditViewModel()
     var contactId: UUID?
     fileprivate func onLoad() {
         Task{
@@ -34,7 +31,8 @@ struct ContactEditView: View {
     }
     fileprivate func buildForm() -> some View {
         Form {
-            TextInputView(label: "Contact Name", value: $viewModel.name)
+            TextInputView(label: "Contact Name", value: $viewModel.name, isNumeric: .constant(false))
+            TextInputView(label: "Phone", value: $viewModel.number, isNumeric: .constant(true))
         }.confirmationDialog("Are you sure you want to discard your changes?", isPresented: $viewModel.showAlert, titleVisibility: .visible) {
             Button("Discard Changes", role: .destructive, action: {goBack()})
             

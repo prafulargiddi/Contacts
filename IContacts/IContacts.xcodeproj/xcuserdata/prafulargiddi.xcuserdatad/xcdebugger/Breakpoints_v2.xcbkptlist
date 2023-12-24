@@ -3,4 +3,244 @@
    uuid = "08256380-B1B3-47FE-AA31-F37CAA32742A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "470C5BA6-3A11-4F5D-93FC-5EE4CE7E0F7F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IContacts/Data/DataSources/CoreData/Entities/CoreDataContactDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "mapToContactResponse(contactEntity:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3ABB6494-A33C-47E3-93B4-8DB2FC1C4EA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "updateContact(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3ABB6494-A33C-47E3-93B4-8DB2FC1C4EA6 - 188ac314044906"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IContacts.ContactEditViewModel.updateContact(Foundation.UUID) async -&gt; ()"
+                  moduleName = "IContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "3ABB6494-A33C-47E3-93B4-8DB2FC1C4EA6 - 20883a52463186e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for IContacts.ContactEditViewModel.updateContact(Foundation.UUID) async -&gt; ()"
+                  moduleName = "IContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "3ABB6494-A33C-47E3-93B4-8DB2FC1C4EA6 - 6f86e7d0ab17f7f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for IContacts.ContactEditViewModel.updateContact(Foundation.UUID) async -&gt; ()"
+                  moduleName = "IContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "3ABB6494-A33C-47E3-93B4-8DB2FC1C4EA6 - 188ac314044ae1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IContacts.ContactEditViewModel.updateContact(Foundation.UUID) async -&gt; ()"
+                  moduleName = "IContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC77223B-05A3-4025-9C09-DE76DFB54439"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "updateContact(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DC77223B-05A3-4025-9C09-DE76DFB54439 - 188ac314044944"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IContacts.ContactEditViewModel.updateContact(Foundation.UUID) async -&gt; ()"
+                  moduleName = "IContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "DC77223B-05A3-4025-9C09-DE76DFB54439 - 188ac314044944"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IContacts.ContactEditViewModel.updateContact(Foundation.UUID) async -&gt; ()"
+                  moduleName = "IContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F07ECB4-8631-4A5F-ADF8-0790B8659897"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IContacts/Data/DataSources/CoreData/Entities/CoreDataContactDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "update(id:data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA9C3E6A-69BF-4A7B-964E-8D870FAEA7B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IContacts/Data/DataSources/CoreData/Wrappers/CoreDataWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "saveEntity(entity:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "571839E9-C08E-4BDA-B1C4-94323C32B577"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IContacts/Data/DataSources/CoreData/Wrappers/CoreDataWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "saveEntity(entity:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D93D29FC-79AB-4B1F-AAB9-A86E09333EC7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getContact(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D93D29FC-79AB-4B1F-AAB9-A86E09333EC7 - 3e66e4863f7a9cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IContacts.ContactEditViewModel.getContact(Foundation.UUID) async -&gt; ()"
+                  moduleName = "IContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "824">
+               </Location>
+               <Location
+                  uuid = "D93D29FC-79AB-4B1F-AAB9-A86E09333EC7 - 3e66e4863f7a9cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IContacts.ContactEditViewModel.getContact(Foundation.UUID) async -&gt; ()"
+                  moduleName = "IContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContacts/Presentation/Contact/Edit/ContactEditViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1004">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

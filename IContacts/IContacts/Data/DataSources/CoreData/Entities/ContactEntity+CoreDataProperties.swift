@@ -2,7 +2,7 @@
 //  ContactEntity+CoreDataProperties.swift
 //  IContacts
 //
-//  Created by Praful Argiddi on 23/12/23.
+//  Created by Praful Argiddi on 24/12/23.
 //
 //
 
@@ -18,6 +18,7 @@ extension ContactEntity {
 
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
+    @NSManaged public var phone: String?
 
 }
 

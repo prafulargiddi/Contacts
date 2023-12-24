@@ -16,7 +16,7 @@ class CoreDataContactDataSource: ContactDataSourceProtocol {
         return result
     }
     func mapToContactResponse(contactEntity: ContactEntity) -> ContactResponseModel {
-        return ContactResponseModel(id: contactEntity.id!, name: contactEntity.name!)
+        return ContactResponseModel(id: contactEntity.id!, name: contactEntity.name ?? "", number: contactEntity.phone ?? "")
     }
     func getAll() async -> Result<[ContactResponseModel], ContactError> {
         do{
@@ -34,7 +34,7 @@ class CoreDataContactDataSource: ContactDataSourceProtocol {
     func getOne(_ id: UUID) async -> Result<ContactResponseModel?, ContactError> {
         do {
             let data = try _getOne(id:id)
-            return .success(ContactResponseModel(id: data.id!, name: data.name!))
+            return .success(ContactResponseModel(id: data.id!, name: data.name ?? "", number: data.phone ?? ""))
         }catch {
             return .failure(.Get)
         }
@@ -45,6 +45,7 @@ class CoreDataContactDataSource: ContactDataSourceProtocol {
             let newContact = ContactEntity(context: dbWrapper.getContext())
             newContact.id = UUID()
             newContact.name = contactRequestModel.name
+            newContact.phone = contactRequestModel.number
             try dbWrapper.saveEntity(entity: newContact)
             return .success(true)
         } catch {
@@ -56,6 +57,7 @@ class CoreDataContactDataSource: ContactDataSourceProtocol {
         do {
            let oldData = try _getOne(id: id)
             oldData.name = data.name
+            oldData.phone = data.number
             try dbWrapper.saveEntity(entity: oldData)
             return .success(true)
         } catch {

@@ -10,16 +10,15 @@ class ContactEditViewModel: ObservableObject {
     private let updateContact: UpdateContactUseCaseProtocol
     private let getContact: GetContactUseCaseProtocol
     
-    init(
-        updateContact: UpdateContactUseCaseProtocol,
-        getContact: GetContactUseCaseProtocol
-    ){
-        self.updateContact = updateContact
-        self.getContact = getContact
+    init(){
+        self.updateContact = Resolver.shared.resolve(UpdateContactUseCaseProtocol.self)
+        self.getContact =
+        Resolver.shared.resolve(GetContactUseCaseProtocol.self)
     }
     @Published var errorMessage = ""
     @Published var originalContact = ContactResponseModel()
     @Published var name = ""
+    @Published var number = ""
     @Published var showAlert = false
     @Published var isLoading: Bool = false
     
@@ -31,6 +30,7 @@ class ContactEditViewModel: ObservableObject {
             self.errorMessage = ""
             self.name = data!.name
             self.originalContact = data!
+            self.number = data!.number
             self.isLoading = false
         case .failure(_):
             self.isLoading = false
@@ -38,11 +38,11 @@ class ContactEditViewModel: ObservableObject {
         }
     }
     var canSave: Bool {
-        return (originalContact.name != self.name && !self.name.isEmpty)
+        return (!self.name.isEmpty && !self.number.isEmpty )
     }
     
     func updateContact(_ id: UUID) async {
-        let data = ContactRequestModel(name: self.name)
+        let data = ContactRequestModel(name: self.name, number: self.number)
         let result = await self.updateContact.execute(id: id, data: data)
         switch(result) {
         case.success(_) :

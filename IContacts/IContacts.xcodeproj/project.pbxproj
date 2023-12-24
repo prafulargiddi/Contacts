@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A6060F92B37126B00BC3CED /* CoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060C72B37126B00BC3CED /* CoreDataWrapper.swift */; };
 		7A6060FA2B37126B00BC3CED /* IContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060C92B37126B00BC3CED /* IContacts.xcdatamodeld */; };
-		7A6060FB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060CB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift */; };
 		7A6060FC2B37126B00BC3CED /* CoreDataContactDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060CC2B37126B00BC3CED /* CoreDataContactDataSource.swift */; };
-		7A6060FD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060CD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift */; };
 		7A6060FE2B37126B00BC3CED /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060CF2B37126B00BC3CED /* CoreDataError.swift */; };
 		7A6060FF2B37126B00BC3CED /* CoreDataWrapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060D22B37126B00BC3CED /* CoreDataWrapperProtocol.swift */; };
 		7A6061002B37126B00BC3CED /* ContactDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060D32B37126B00BC3CED /* ContactDataSourceProtocol.swift */; };
@@ -44,6 +42,8 @@
 		7A6061222B3731AD00BC3CED /* ContactCreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061212B3731AD00BC3CED /* ContactCreateViewModel.swift */; };
 		7A6061242B37AD2700BC3CED /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061232B37AD2700BC3CED /* ContactManager.swift */; };
 		7A6061262B37AD7900BC3CED /* ContactDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061252B37AD7900BC3CED /* ContactDIContainer.swift */; };
+		7A6061302B3855B300BC3CED /* ContactEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612E2B3855B300BC3CED /* ContactEntity+CoreDataClass.swift */; };
+		7A6061312B3855B300BC3CED /* ContactEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612F2B3855B300BC3CED /* ContactEntity+CoreDataProperties.swift */; };
 		7A6D16EF2B33588500261438 /* IContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16EE2B33588500261438 /* IContactsApp.swift */; };
 		7A6D16F12B33588500261438 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16F02B33588500261438 /* ContentView.swift */; };
 		7A6D16F32B33588700261438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D16F22B33588700261438 /* Assets.xcassets */; };
@@ -74,9 +74,7 @@
 /* Begin PBXFileReference section */
 		7A6060C72B37126B00BC3CED /* CoreDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataWrapper.swift; sourceTree = "<group>"; };
 		7A6060CA2B37126B00BC3CED /* IContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IContacts.xcdatamodel; sourceTree = "<group>"; };
-		7A6060CB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7A6060CC2B37126B00BC3CED /* CoreDataContactDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContactDataSource.swift; sourceTree = "<group>"; };
-		7A6060CD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7A6060CF2B37126B00BC3CED /* CoreDataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
 		7A6060D22B37126B00BC3CED /* CoreDataWrapperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataWrapperProtocol.swift; sourceTree = "<group>"; };
 		7A6060D32B37126B00BC3CED /* ContactDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDataSourceProtocol.swift; sourceTree = "<group>"; };
@@ -108,6 +106,9 @@
 		7A6061212B3731AD00BC3CED /* ContactCreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCreateViewModel.swift; sourceTree = "<group>"; };
 		7A6061232B37AD2700BC3CED /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
 		7A6061252B37AD7900BC3CED /* ContactDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDIContainer.swift; sourceTree = "<group>"; };
+		7A60612B2B384FAC00BC3CED /* IContacts 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "IContacts 2.xcdatamodel"; sourceTree = "<group>"; };
+		7A60612E2B3855B300BC3CED /* ContactEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7A60612F2B3855B300BC3CED /* ContactEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7A6D16EB2B33588500261438 /* IContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D16EE2B33588500261438 /* IContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IContactsApp.swift; sourceTree = "<group>"; };
 		7A6D16F02B33588500261438 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,9 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				7A6060C92B37126B00BC3CED /* IContacts.xcdatamodeld */,
-				7A6060CB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift */,
 				7A6060CC2B37126B00BC3CED /* CoreDataContactDataSource.swift */,
-				7A6060CD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift */,
+				7A60612E2B3855B300BC3CED /* ContactEntity+CoreDataClass.swift */,
+				7A60612F2B3855B300BC3CED /* ContactEntity+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -583,7 +584,6 @@
 				7A60611C2B37268400BC3CED /* ContactEditView.swift in Sources */,
 				7A60610F2B37126C00BC3CED /* CreateContactUseCaseProtocol.swift in Sources */,
 				7A6061222B3731AD00BC3CED /* ContactCreateViewModel.swift in Sources */,
-				7A6060FB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift in Sources */,
 				7A6061242B37AD2700BC3CED /* ContactManager.swift in Sources */,
 				7A6061122B37126C00BC3CED /* GetContactUseCase.swift in Sources */,
 				7A6061152B37126C00BC3CED /* CreateContactUseCase.swift in Sources */,
@@ -591,7 +591,7 @@
 				7A6060FA2B37126B00BC3CED /* IContacts.xcdatamodeld in Sources */,
 				7A60610D2B37126B00BC3CED /* DeleteContactUseCaseProtocol.swift in Sources */,
 				7A6061092B37126B00BC3CED /* ContactResponseModel.swift in Sources */,
-				7A6060FD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift in Sources */,
+				7A6061312B3855B300BC3CED /* ContactEntity+CoreDataProperties.swift in Sources */,
 				7A60611E2B37269700BC3CED /* ContactEditViewModel.swift in Sources */,
 				7A6061002B37126B00BC3CED /* ContactDataSourceProtocol.swift in Sources */,
 				7A6061022B37126B00BC3CED /* Resolver.swift in Sources */,
@@ -599,6 +599,7 @@
 				7A6D16F82B33588700261438 /* Persistence.swift in Sources */,
 				7A6D16F12B33588500261438 /* ContentView.swift in Sources */,
 				7A6061132B37126C00BC3CED /* UpdateContactUseCase.swift in Sources */,
+				7A6061302B3855B300BC3CED /* ContactEntity+CoreDataClass.swift in Sources */,
 				7A6060FC2B37126B00BC3CED /* CoreDataContactDataSource.swift in Sources */,
 				7A6061062B37126B00BC3CED /* BackButtonView.swift in Sources */,
 				7A6061052B37126B00BC3CED /* SaveButtonView.swift in Sources */,
@@ -962,9 +963,10 @@
 		7A6060C92B37126B00BC3CED /* IContacts.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				7A60612B2B384FAC00BC3CED /* IContacts 2.xcdatamodel */,
 				7A6060CA2B37126B00BC3CED /* IContacts.xcdatamodel */,
 			);
-			currentVersion = 7A6060CA2B37126B00BC3CED /* IContacts.xcdatamodel */;
+			currentVersion = 7A60612B2B384FAC00BC3CED /* IContacts 2.xcdatamodel */;
 			path = IContacts.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

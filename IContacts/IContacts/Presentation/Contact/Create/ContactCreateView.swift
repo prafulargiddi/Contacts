@@ -10,9 +10,7 @@ import SwiftUI
 struct ContactCreateView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    @StateObject var vm = ContactCreateViewModel(
-        createContact: Resolver.shared.resolve(CreateContactUseCaseProtocol.self)
-    )
+    @StateObject var vm = ContactCreateViewModel()
     
     func goBack() {
         self.presentationMode.wrappedValue.dismiss()
@@ -27,7 +25,8 @@ struct ContactCreateView: View {
     
     fileprivate func buildForm() -> some View {
         Form{
-            TextInputView(label: "Name", value: $vm.name)
+            TextInputView(label: "Name", value: $vm.name, isNumeric: .constant(false))
+            TextInputView(label: "Phone", value: $vm.number, isNumeric: .constant(true))
         }
         .confirmationDialog("Are you sure you want to discard your changes?", isPresented: $vm.showAlert, titleVisibility: .visible) {
             

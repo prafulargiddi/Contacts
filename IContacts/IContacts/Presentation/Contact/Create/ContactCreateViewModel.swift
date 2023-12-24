@@ -9,19 +9,20 @@ import Foundation
 class ContactCreateViewModel: ObservableObject{
     private let createContactUseCase: CreateContactUseCaseProtocol
     
-    init(createContact: CreateContactUseCaseProtocol){
-        self.createContactUseCase = createContact
+    init(){
+        self.createContactUseCase = Resolver.shared.resolve(CreateContactUseCaseProtocol.self)
     }
     
     @Published var errorMessage = ""
     @Published var name = ""
+    @Published var number = ""
     @Published var showAlert = false
     
     
     
     func createContact() async{
         
-        let result = await self.createContactUseCase.execute(ContactRequestModel(name: self.name))
+        let result = await self.createContactUseCase.execute(ContactRequestModel(name: self.name,number: self.number))
         switch result{
         case .success(_):
             self.errorMessage = ""
