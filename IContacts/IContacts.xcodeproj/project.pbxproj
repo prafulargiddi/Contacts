@@ -18,8 +18,8 @@
 		7A6061012B37126B00BC3CED /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060D82B37126B00BC3CED /* ContactListView.swift */; };
 		7A6061022B37126B00BC3CED /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060D92B37126B00BC3CED /* Resolver.swift */; };
 		7A6061032B37126B00BC3CED /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DA2B37126B00BC3CED /* ContactListViewModel.swift */; };
-		7A6061042B37126B00BC3CED /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DD2B37126B00BC3CED /* TextInput.swift */; };
-		7A6061052B37126B00BC3CED /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DE2B37126B00BC3CED /* SaveButton.swift */; };
+		7A6061042B37126B00BC3CED /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DD2B37126B00BC3CED /* TextInputView.swift */; };
+		7A6061052B37126B00BC3CED /* SaveButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DE2B37126B00BC3CED /* SaveButtonView.swift */; };
 		7A6061062B37126B00BC3CED /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060DF2B37126B00BC3CED /* BackButtonView.swift */; };
 		7A6061072B37126B00BC3CED /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060E02B37126B00BC3CED /* AddButton.swift */; };
 		7A6061082B37126B00BC3CED /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060E32B37126B00BC3CED /* ContactRepository.swift */; };
@@ -38,6 +38,12 @@
 		7A6061152B37126C00BC3CED /* CreateContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6060F82B37126B00BC3CED /* CreateContactUseCase.swift */; };
 		7A6061182B37153700BC3CED /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6061172B37153700BC3CED /* Swinject */; };
 		7A60611A2B3715D300BC3CED /* IocContactainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061192B3715D300BC3CED /* IocContactainer.swift */; };
+		7A60611C2B37268400BC3CED /* ContactEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60611B2B37268400BC3CED /* ContactEditView.swift */; };
+		7A60611E2B37269700BC3CED /* ContactEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60611D2B37269700BC3CED /* ContactEditViewModel.swift */; };
+		7A6061202B37319400BC3CED /* ContactCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60611F2B37319400BC3CED /* ContactCreateView.swift */; };
+		7A6061222B3731AD00BC3CED /* ContactCreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061212B3731AD00BC3CED /* ContactCreateViewModel.swift */; };
+		7A6061242B37AD2700BC3CED /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061232B37AD2700BC3CED /* ContactManager.swift */; };
+		7A6061262B37AD7900BC3CED /* ContactDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061252B37AD7900BC3CED /* ContactDIContainer.swift */; };
 		7A6D16EF2B33588500261438 /* IContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16EE2B33588500261438 /* IContactsApp.swift */; };
 		7A6D16F12B33588500261438 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16F02B33588500261438 /* ContentView.swift */; };
 		7A6D16F32B33588700261438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D16F22B33588700261438 /* Assets.xcassets */; };
@@ -77,8 +83,8 @@
 		7A6060D82B37126B00BC3CED /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		7A6060D92B37126B00BC3CED /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		7A6060DA2B37126B00BC3CED /* ContactListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
-		7A6060DD2B37126B00BC3CED /* TextInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
-		7A6060DE2B37126B00BC3CED /* SaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		7A6060DD2B37126B00BC3CED /* TextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		7A6060DE2B37126B00BC3CED /* SaveButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveButtonView.swift; sourceTree = "<group>"; };
 		7A6060DF2B37126B00BC3CED /* BackButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		7A6060E02B37126B00BC3CED /* AddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		7A6060E32B37126B00BC3CED /* ContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
@@ -96,6 +102,12 @@
 		7A6060F72B37126B00BC3CED /* DeleteContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteContactUseCase.swift; sourceTree = "<group>"; };
 		7A6060F82B37126B00BC3CED /* CreateContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContactUseCase.swift; sourceTree = "<group>"; };
 		7A6061192B3715D300BC3CED /* IocContactainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IocContactainer.swift; sourceTree = "<group>"; };
+		7A60611B2B37268400BC3CED /* ContactEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactEditView.swift; path = IContacts/Presentation/Contact/Edit/ContactEditView.swift; sourceTree = SOURCE_ROOT; };
+		7A60611D2B37269700BC3CED /* ContactEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEditViewModel.swift; sourceTree = "<group>"; };
+		7A60611F2B37319400BC3CED /* ContactCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCreateView.swift; sourceTree = "<group>"; };
+		7A6061212B3731AD00BC3CED /* ContactCreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCreateViewModel.swift; sourceTree = "<group>"; };
+		7A6061232B37AD2700BC3CED /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		7A6061252B37AD7900BC3CED /* ContactDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDIContainer.swift; sourceTree = "<group>"; };
 		7A6D16EB2B33588500261438 /* IContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D16EE2B33588500261438 /* IContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IContactsApp.swift; sourceTree = "<group>"; };
 		7A6D16F02B33588500261438 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +152,8 @@
 			children = (
 				7A6061192B3715D300BC3CED /* IocContactainer.swift */,
 				7A6060D92B37126B00BC3CED /* Resolver.swift */,
+				7A6061232B37AD2700BC3CED /* ContactManager.swift */,
+				7A6061252B37AD7900BC3CED /* ContactDIContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -237,6 +251,8 @@
 		7A6060D62B37126B00BC3CED /* Edit */ = {
 			isa = PBXGroup;
 			children = (
+				7A60611B2B37268400BC3CED /* ContactEditView.swift */,
+				7A60611D2B37269700BC3CED /* ContactEditViewModel.swift */,
 			);
 			path = Edit;
 			sourceTree = "<group>";
@@ -253,6 +269,8 @@
 		7A6060DB2B37126B00BC3CED /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				7A60611F2B37319400BC3CED /* ContactCreateView.swift */,
+				7A6061212B3731AD00BC3CED /* ContactCreateViewModel.swift */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -260,8 +278,8 @@
 		7A6060DC2B37126B00BC3CED /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				7A6060DD2B37126B00BC3CED /* TextInput.swift */,
-				7A6060DE2B37126B00BC3CED /* SaveButton.swift */,
+				7A6060DD2B37126B00BC3CED /* TextInputView.swift */,
+				7A6060DE2B37126B00BC3CED /* SaveButtonView.swift */,
 				7A6060DF2B37126B00BC3CED /* BackButtonView.swift */,
 				7A6060E02B37126B00BC3CED /* AddButton.swift */,
 			);
@@ -559,10 +577,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6061032B37126B00BC3CED /* ContactListViewModel.swift in Sources */,
+				7A6061202B37319400BC3CED /* ContactCreateView.swift in Sources */,
 				7A6061102B37126C00BC3CED /* GetContactUseCaseProtocol.swift in Sources */,
 				7A60610A2B37126B00BC3CED /* ContactError.swift in Sources */,
+				7A60611C2B37268400BC3CED /* ContactEditView.swift in Sources */,
 				7A60610F2B37126C00BC3CED /* CreateContactUseCaseProtocol.swift in Sources */,
+				7A6061222B3731AD00BC3CED /* ContactCreateViewModel.swift in Sources */,
 				7A6060FB2B37126B00BC3CED /* ContactEntity+CoreDataClass.swift in Sources */,
+				7A6061242B37AD2700BC3CED /* ContactManager.swift in Sources */,
 				7A6061122B37126C00BC3CED /* GetContactUseCase.swift in Sources */,
 				7A6061152B37126C00BC3CED /* CreateContactUseCase.swift in Sources */,
 				7A6061012B37126B00BC3CED /* ContactListView.swift in Sources */,
@@ -570,6 +592,7 @@
 				7A60610D2B37126B00BC3CED /* DeleteContactUseCaseProtocol.swift in Sources */,
 				7A6061092B37126B00BC3CED /* ContactResponseModel.swift in Sources */,
 				7A6060FD2B37126B00BC3CED /* ContactEntity+CoreDataProperties.swift in Sources */,
+				7A60611E2B37269700BC3CED /* ContactEditViewModel.swift in Sources */,
 				7A6061002B37126B00BC3CED /* ContactDataSourceProtocol.swift in Sources */,
 				7A6061022B37126B00BC3CED /* Resolver.swift in Sources */,
 				7A60610C2B37126B00BC3CED /* GetAllContactUseCaseProtocol.swift in Sources */,
@@ -578,7 +601,7 @@
 				7A6061132B37126C00BC3CED /* UpdateContactUseCase.swift in Sources */,
 				7A6060FC2B37126B00BC3CED /* CoreDataContactDataSource.swift in Sources */,
 				7A6061062B37126B00BC3CED /* BackButtonView.swift in Sources */,
-				7A6061052B37126B00BC3CED /* SaveButton.swift in Sources */,
+				7A6061052B37126B00BC3CED /* SaveButtonView.swift in Sources */,
 				7A6061112B37126C00BC3CED /* GetAllContactUseCase.swift in Sources */,
 				7A6060FF2B37126B00BC3CED /* CoreDataWrapperProtocol.swift in Sources */,
 				7A60610B2B37126B00BC3CED /* ContactRepositoryProtocol.swift in Sources */,
@@ -588,8 +611,9 @@
 				7A6060F92B37126B00BC3CED /* CoreDataWrapper.swift in Sources */,
 				7A6D16EF2B33588500261438 /* IContactsApp.swift in Sources */,
 				7A6061142B37126C00BC3CED /* DeleteContactUseCase.swift in Sources */,
-				7A6061042B37126B00BC3CED /* TextInput.swift in Sources */,
+				7A6061042B37126B00BC3CED /* TextInputView.swift in Sources */,
 				7A60611A2B3715D300BC3CED /* IocContactainer.swift in Sources */,
+				7A6061262B37AD7900BC3CED /* ContactDIContainer.swift in Sources */,
 				7A6061072B37126B00BC3CED /* AddButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

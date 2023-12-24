@@ -28,7 +28,7 @@ class CoreDataContactDataSource: ContactDataSourceProtocol {
         }
     }
     private func _getOne(id: UUID) throws -> ContactEntity {
-        let result: [ContactEntity] = try dbWrapper.getData(entityName: "ContactEntity", predicate: NSPredicate(format: "id = %@")) as! [ContactEntity]
+        let result: [ContactEntity] = try dbWrapper.getData(entityName: "ContactEntity", predicate: NSPredicate(format: "id = %@", id.uuidString)) as! [ContactEntity]
         return result[0]
     }
     func getOne(_ id: UUID) async -> Result<ContactResponseModel?, ContactError> {

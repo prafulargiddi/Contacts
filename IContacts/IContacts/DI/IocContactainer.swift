@@ -17,7 +17,7 @@ func buildContainer() -> Container {
         return CoreDataContactDataSource(dbWrapper: container.resolve(CoreDataWrapperProtocol.self)!)
     }.inObjectScope(.container)
     container.register(ContactRepositoryProtocol.self) { _ in
-        return container.resolve(ContactRepositoryProtocol.self)!
+        return ContactRepository(contactDataSource : container.resolve(ContactDataSourceProtocol.self)!)
     }.inObjectScope(.container)
     
     container.register(CreateContactUseCaseProtocol.self) { _ in

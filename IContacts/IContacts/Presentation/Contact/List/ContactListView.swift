@@ -8,9 +8,51 @@
 import SwiftUI
 
 struct ContactListView: View {
-//    @StateObject var viewModel = ContactListViewModel(getAllContacts: Res, deleteContact: <#T##DeleteContactUseCaseProtocol#>)
+    @StateObject var viewModel = ContactListViewModel(getAllContacts: Resolver.shared.resolve(GetAllContactUseCaseProtocol.self), deleteContact: Resolver.shared.resolve(DeleteContactUseCaseProtocol.self))
+    fileprivate func onLoad() {
+        Task{
+            await viewModel.getContacts()
+        }
+    }
+    
+    fileprivate func renderListItem(_ contact: ContactResponseModel) -> some View {
+        NavigationLink(destination: ContactEditView(contactId: contact.id)){
+            HStack{
+                VStack(alignment:.leading){
+                    Text("\(contact.name)")
+                        .font(.body)
+                        .foregroundColor(.black)
+                    
+                }
+            }
+        }
+        
+    }
+    
+    fileprivate func onDelete(at offsets: IndexSet){
+        let item = viewModel.contacts[offsets.min()!]
+        Task{
+            await viewModel.deleteContact(item.id)
+            await viewModel.getContacts()
+        }
+    }
+    
+    fileprivate func renderList() -> some View{
+        List{
+            ForEach(viewModel.contacts, id:\.self){contact in
+                renderListItem(contact)
+            }.onDelete(perform: onDelete)
+        }
+        .onAppear(perform: onLoad )
+        .navigationTitle("Contacts")
+        .toolbar(content: { AddButton(destination: AnyView(ContactCreateView())) })
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            renderList()
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

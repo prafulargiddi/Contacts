@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TextInput: View {
+struct TextInputView: View {
     var label: String
     @Binding var value: String
     var body: some View {
@@ -19,5 +19,5 @@ struct TextInput: View {
 }
 
 #Preview {
-    TextInput(label: "Name", value: .constant("Name"))
+    TextInputView(label: "Name", value: .constant("Name"))
 }

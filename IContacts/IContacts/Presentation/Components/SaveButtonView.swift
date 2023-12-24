@@ -1,5 +1,5 @@
 //
-//  SaveButton.swift
+//  SaveButtonView.swift
 //  IContacts
 //
 //  Created by Praful Argiddi on 20/12/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SaveButton: View {
+struct SaveButtonView: View {
     var onSave: ()->Void
     var isDisabled: Bool
     var body: some View {
@@ -22,5 +22,5 @@ struct SaveButton: View {
 }
 
 #Preview {
-    SaveButton(onSave: {}, isDisabled: false)
+    SaveButtonView(onSave: {}, isDisabled: false)
 }
