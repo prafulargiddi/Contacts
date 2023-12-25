@@ -9,8 +9,8 @@ import Foundation
 class ContactCreateViewModel: ObservableObject{
     private let createContactUseCase: CreateContactUseCaseProtocol
     
-    init(){
-        self.createContactUseCase = Resolver.shared.resolve(CreateContactUseCaseProtocol.self)
+    init(createContactUseCase:CreateContactUseCaseProtocol ){
+        self.createContactUseCase = createContactUseCase 
     }
     
     @Published var errorMessage = ""

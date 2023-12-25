@@ -11,7 +11,7 @@ struct ContactEditView: View {
     @Environment(\.presentationMode) var presentationMode
     
     
-    @StateObject var viewModel = ContactEditViewModel()
+    @StateObject var viewModel = ContactEditViewModel(updateContact: Resolver.shared.resolve(UpdateContactUseCaseProtocol.self), getContact: Resolver.shared.resolve(GetContactUseCaseProtocol.self))
     var contactId: UUID?
     fileprivate func onLoad() {
         Task{

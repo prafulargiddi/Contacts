@@ -10,10 +10,10 @@ class ContactEditViewModel: ObservableObject {
     private let updateContact: UpdateContactUseCaseProtocol
     private let getContact: GetContactUseCaseProtocol
     
-    init(){
-        self.updateContact = Resolver.shared.resolve(UpdateContactUseCaseProtocol.self)
-        self.getContact =
-        Resolver.shared.resolve(GetContactUseCaseProtocol.self)
+    init(updateContact:UpdateContactUseCaseProtocol, getContact:GetContactUseCaseProtocol){
+        self.updateContact = updateContact 
+        self.getContact = getContact
+        
     }
     @Published var errorMessage = ""
     @Published var originalContact = ContactResponseModel()

@@ -14,10 +14,12 @@ class ContactListViewModel: ObservableObject {
     private let getAllContacts: GetAllContactUseCaseProtocol
     private let deleteContact: DeleteContactUseCaseProtocol
     
-    init()
+    init(getAllContacts: GetAllContactUseCaseProtocol,deleteContact:  DeleteContactUseCaseProtocol)
     {
-        self.getAllContacts = Resolver.shared.resolve(GetAllContactUseCaseProtocol.self)
-        self.deleteContact = Resolver.shared.resolve(DeleteContactUseCaseProtocol.self)
+        self.getAllContacts = getAllContacts
+       
+        self.deleteContact = deleteContact
+        
     }
     func deleteContact(_ id: UUID) async {
         let result = await self.deleteContact.execute(id)

@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "470C5BA6-3A11-4F5D-93FC-5EE4CE7E0F7F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IContacts/Data/DataSources/CoreData/Entities/CoreDataContactDataSource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "mapToContactResponse(contactEntity:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3ABB6494-A33C-47E3-93B4-8DB2FC1C4EA6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -238,6 +222,54 @@
                   startingLineNumber = "34"
                   endingLineNumber = "34"
                   offsetFromSymbolStart = "1004">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F900213-AD53-425B-9D64-79475B831D6C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IContactsTests/Domain/ContactRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "test_contactDataSource_update_should_be_called()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F900213-AD53-425B-9D64-79475B831D6C - 2ef11a2c383173c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IContactsTests.ContactRepositoryTests.test_contactDataSource_update_should_be_called() async -&gt; ()"
+                  moduleName = "IContactsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContactsTests/Domain/ContactRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "0F900213-AD53-425B-9D64-79475B831D6C - 2ef11a2c383173c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IContactsTests.ContactRepositoryTests.test_contactDataSource_update_should_be_called() async -&gt; ()"
+                  moduleName = "IContactsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prafulargiddi/Documents/InterviewPrep/Contacts/IContacts/IContactsTests/Domain/ContactRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "340">
                </Location>
             </Locations>
          </BreakpointContent>

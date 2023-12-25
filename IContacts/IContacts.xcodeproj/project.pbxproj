@@ -44,6 +44,23 @@
 		7A6061262B37AD7900BC3CED /* ContactDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061252B37AD7900BC3CED /* ContactDIContainer.swift */; };
 		7A6061302B3855B300BC3CED /* ContactEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612E2B3855B300BC3CED /* ContactEntity+CoreDataClass.swift */; };
 		7A6061312B3855B300BC3CED /* ContactEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612F2B3855B300BC3CED /* ContactEntity+CoreDataProperties.swift */; };
+		7A60613E2B394C2000BC3CED /* MockCoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60613D2B394C2000BC3CED /* MockCoreDataWrapper.swift */; };
+		7A6061422B3951B900BC3CED /* MockContactDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061412B3951B900BC3CED /* MockContactDataSource.swift */; };
+		7A6061442B396DD600BC3CED /* ContactRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061432B396DD600BC3CED /* ContactRepositoryTests.swift */; };
+		7A6061482B39807600BC3CED /* UseCasesContactCreateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061472B39807600BC3CED /* UseCasesContactCreateTests.swift */; };
+		7A60614E2B39831D00BC3CED /* MockContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60614D2B39831D00BC3CED /* MockContactRepository.swift */; };
+		7A6061502B3987F400BC3CED /* MockCreateContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60614F2B3987F400BC3CED /* MockCreateContactUseCase.swift */; };
+		7A6061522B3988EA00BC3CED /* MockDeleteContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061512B3988EA00BC3CED /* MockDeleteContactUseCase.swift */; };
+		7A6061542B3989A700BC3CED /* MockGetOneContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061532B3989A700BC3CED /* MockGetOneContactUseCase.swift */; };
+		7A6061562B398B1200BC3CED /* MockGetAllContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061552B398B1200BC3CED /* MockGetAllContactUseCase.swift */; };
+		7A6061582B398F2A00BC3CED /* UseCaseContactUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061572B398F2A00BC3CED /* UseCaseContactUpdateTests.swift */; };
+		7A60615A2B39941A00BC3CED /* UseCaseGetContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061592B39941A00BC3CED /* UseCaseGetContactTests.swift */; };
+		7A60615C2B3996C000BC3CED /* UseCaseGetAllContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60615B2B3996C000BC3CED /* UseCaseGetAllContactTests.swift */; };
+		7A60615E2B399B3100BC3CED /* UseCaseContactDeleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60615D2B399B3100BC3CED /* UseCaseContactDeleteTests.swift */; };
+		7A6061632B39B4D900BC3CED /* ContactCreateViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061622B39B4D900BC3CED /* ContactCreateViewModelTest.swift */; };
+		7A6061652B39B9E800BC3CED /* ContacEditViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061642B39B9E800BC3CED /* ContacEditViewModelTest.swift */; };
+		7A6061672B39C80000BC3CED /* MockUpdateContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061662B39C80000BC3CED /* MockUpdateContactUseCase.swift */; };
+		7A6061692B39CE0500BC3CED /* ContactListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6061682B39CE0500BC3CED /* ContactListViewModelTest.swift */; };
 		7A6D16EF2B33588500261438 /* IContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16EE2B33588500261438 /* IContactsApp.swift */; };
 		7A6D16F12B33588500261438 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D16F02B33588500261438 /* ContentView.swift */; };
 		7A6D16F32B33588700261438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D16F22B33588700261438 /* Assets.xcassets */; };
@@ -109,6 +126,23 @@
 		7A60612B2B384FAC00BC3CED /* IContacts 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "IContacts 2.xcdatamodel"; sourceTree = "<group>"; };
 		7A60612E2B3855B300BC3CED /* ContactEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7A60612F2B3855B300BC3CED /* ContactEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A60613D2B394C2000BC3CED /* MockCoreDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreDataWrapper.swift; sourceTree = "<group>"; };
+		7A6061412B3951B900BC3CED /* MockContactDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContactDataSource.swift; sourceTree = "<group>"; };
+		7A6061432B396DD600BC3CED /* ContactRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepositoryTests.swift; sourceTree = "<group>"; };
+		7A6061472B39807600BC3CED /* UseCasesContactCreateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesContactCreateTests.swift; sourceTree = "<group>"; };
+		7A60614D2B39831D00BC3CED /* MockContactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContactRepository.swift; sourceTree = "<group>"; };
+		7A60614F2B3987F400BC3CED /* MockCreateContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCreateContactUseCase.swift; sourceTree = "<group>"; };
+		7A6061512B3988EA00BC3CED /* MockDeleteContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeleteContactUseCase.swift; sourceTree = "<group>"; };
+		7A6061532B3989A700BC3CED /* MockGetOneContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetOneContactUseCase.swift; sourceTree = "<group>"; };
+		7A6061552B398B1200BC3CED /* MockGetAllContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetAllContactUseCase.swift; sourceTree = "<group>"; };
+		7A6061572B398F2A00BC3CED /* UseCaseContactUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseContactUpdateTests.swift; sourceTree = "<group>"; };
+		7A6061592B39941A00BC3CED /* UseCaseGetContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseGetContactTests.swift; sourceTree = "<group>"; };
+		7A60615B2B3996C000BC3CED /* UseCaseGetAllContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseGetAllContactTests.swift; sourceTree = "<group>"; };
+		7A60615D2B399B3100BC3CED /* UseCaseContactDeleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseContactDeleteTests.swift; sourceTree = "<group>"; };
+		7A6061622B39B4D900BC3CED /* ContactCreateViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCreateViewModelTest.swift; sourceTree = "<group>"; };
+		7A6061642B39B9E800BC3CED /* ContacEditViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacEditViewModelTest.swift; sourceTree = "<group>"; };
+		7A6061662B39C80000BC3CED /* MockUpdateContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUpdateContactUseCase.swift; sourceTree = "<group>"; };
+		7A6061682B39CE0500BC3CED /* ContactListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTest.swift; sourceTree = "<group>"; };
 		7A6D16EB2B33588500261438 /* IContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D16EE2B33588500261438 /* IContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IContactsApp.swift; sourceTree = "<group>"; };
 		7A6D16F02B33588500261438 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -380,6 +414,139 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
+		7A6061322B39333D00BC3CED /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061492B39829800BC3CED /* Domain */,
+				7A6061372B39488D00BC3CED /* DataSources */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		7A6061332B39334900BC3CED /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061612B39B4B500BC3CED /* Create */,
+				7A6061602B39B4AD00BC3CED /* List */,
+				7A60615F2B39B4A300BC3CED /* Edit */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7A6061342B39337100BC3CED /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061462B39805600BC3CED /* UseCases */,
+				7A6061452B39803D00BC3CED /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7A6061362B39338700BC3CED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7A6061372B39488D00BC3CED /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061412B3951B900BC3CED /* MockContactDataSource.swift */,
+				7A6061382B3948A500BC3CED /* CoreData */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		7A6061382B3948A500BC3CED /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061392B3948AF00BC3CED /* Wrappers */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7A6061392B3948AF00BC3CED /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				7A60613D2B394C2000BC3CED /* MockCoreDataWrapper.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		7A6061452B39803D00BC3CED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061432B396DD600BC3CED /* ContactRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7A6061462B39805600BC3CED /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061472B39807600BC3CED /* UseCasesContactCreateTests.swift */,
+				7A6061572B398F2A00BC3CED /* UseCaseContactUpdateTests.swift */,
+				7A6061592B39941A00BC3CED /* UseCaseGetContactTests.swift */,
+				7A60615B2B3996C000BC3CED /* UseCaseGetAllContactTests.swift */,
+				7A60615D2B399B3100BC3CED /* UseCaseContactDeleteTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7A6061492B39829800BC3CED /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7A60614C2B3982FC00BC3CED /* UseCases */,
+				7A60614B2B3982E300BC3CED /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7A60614B2B3982E300BC3CED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7A60614D2B39831D00BC3CED /* MockContactRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7A60614C2B3982FC00BC3CED /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7A60614F2B3987F400BC3CED /* MockCreateContactUseCase.swift */,
+				7A6061512B3988EA00BC3CED /* MockDeleteContactUseCase.swift */,
+				7A6061532B3989A700BC3CED /* MockGetOneContactUseCase.swift */,
+				7A6061552B398B1200BC3CED /* MockGetAllContactUseCase.swift */,
+				7A6061662B39C80000BC3CED /* MockUpdateContactUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7A60615F2B39B4A300BC3CED /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061642B39B9E800BC3CED /* ContacEditViewModelTest.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		7A6061602B39B4AD00BC3CED /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061682B39CE0500BC3CED /* ContactListViewModelTest.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		7A6061612B39B4B500BC3CED /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				7A6061622B39B4D900BC3CED /* ContactCreateViewModelTest.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
 		7A6D16E22B33588500261438 = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +594,10 @@
 		7A6D17032B33588700261438 /* IContactsTests */ = {
 			isa = PBXGroup;
 			children = (
+				7A6061322B39333D00BC3CED /* Mocks */,
+				7A6061332B39334900BC3CED /* Presentation */,
+				7A6061342B39337100BC3CED /* Domain */,
+				7A6061362B39338700BC3CED /* Data */,
 				7A6D17042B33588700261438 /* IContactsTests.swift */,
 			);
 			path = IContactsTests;
@@ -623,7 +794,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6061502B3987F400BC3CED /* MockCreateContactUseCase.swift in Sources */,
+				7A60614E2B39831D00BC3CED /* MockContactRepository.swift in Sources */,
+				7A6061652B39B9E800BC3CED /* ContacEditViewModelTest.swift in Sources */,
+				7A60615C2B3996C000BC3CED /* UseCaseGetAllContactTests.swift in Sources */,
+				7A60615E2B399B3100BC3CED /* UseCaseContactDeleteTests.swift in Sources */,
+				7A6061672B39C80000BC3CED /* MockUpdateContactUseCase.swift in Sources */,
+				7A6061542B3989A700BC3CED /* MockGetOneContactUseCase.swift in Sources */,
+				7A60613E2B394C2000BC3CED /* MockCoreDataWrapper.swift in Sources */,
+				7A6061522B3988EA00BC3CED /* MockDeleteContactUseCase.swift in Sources */,
+				7A6061562B398B1200BC3CED /* MockGetAllContactUseCase.swift in Sources */,
+				7A6061582B398F2A00BC3CED /* UseCaseContactUpdateTests.swift in Sources */,
+				7A6061422B3951B900BC3CED /* MockContactDataSource.swift in Sources */,
+				7A6061482B39807600BC3CED /* UseCasesContactCreateTests.swift in Sources */,
+				7A6061442B396DD600BC3CED /* ContactRepositoryTests.swift in Sources */,
 				7A6D17052B33588700261438 /* IContactsTests.swift in Sources */,
+				7A60615A2B39941A00BC3CED /* UseCaseGetContactTests.swift in Sources */,
+				7A6061632B39B4D900BC3CED /* ContactCreateViewModelTest.swift in Sources */,
+				7A6061692B39CE0500BC3CED /* ContactListViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

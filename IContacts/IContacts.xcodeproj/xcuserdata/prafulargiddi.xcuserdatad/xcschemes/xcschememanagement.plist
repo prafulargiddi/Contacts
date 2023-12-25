@@ -7,7 +7,7 @@
 		<key>IContacts.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Sample-iOS (Playground) 1.xcscheme</key>
 		<dict>
@@ -71,6 +71,24 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7A6D16EA2B33588500261438</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A6D16FF2B33588700261438</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A6D17092B33588800261438</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -10,7 +10,7 @@ import SwiftUI
 struct ContactCreateView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    @StateObject var vm = ContactCreateViewModel()
+    @StateObject var vm = ContactCreateViewModel(createContactUseCase: Resolver.shared.resolve(CreateContactUseCaseProtocol.self))
     
     func goBack() {
         self.presentationMode.wrappedValue.dismiss()
